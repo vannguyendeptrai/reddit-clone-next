@@ -31,21 +31,21 @@ export default function Home({ posts }) {
         <p className='grow'></p>
         {session ? 
           <>
-            <Link href={`/api/auth/signin`}>
-              <a
-                className='flex-l border px-4 font-bold rounded-full mb-1'
-              >
-                login
-              </a>
-            </Link>
-          </> 
-          : 
-          <>
             <Link href={`/api/auth/signout`}>
               <a
                 className='flex-l border px-4 font-bold rounded-full mb-1'
               >
                 logout
+              </a>
+            </Link>
+          </> 
+          : 
+          <>
+            <Link href={`/api/auth/signin`}>
+              <a
+                className='flex-l border px-4 font-bold rounded-full mb-1'
+              >
+                login
               </a>
             </Link>
           </>
